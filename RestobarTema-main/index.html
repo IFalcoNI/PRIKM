@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KMSWW4F");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NHMNXL0LP3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NHMNXL0LP3");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>рестобар Тема</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <style>
+      a {
+        color: black;
+      }
+    </style>
+      <div class="leftHeader"></div>
+      <header id="header" class="header">
+        <div class="headerText">
+          <h1>Tema</h1>
+          <h2>Restobar</h2>
+        </div>
+        <div class="nav">
+          <ul id="menu" class="menu">
+            <li>
+              <a href="#home"> Головна </a>
+            </li>
+            <li>
+              <a href="#menuBG"> Меню </a>
+            </li>
+            <li>
+              <a href="#about"> Про нас </a>
+            </li>
+
+            <a href="#"> </a>
+          </ul>
+          <div onclick="{toggle()}" class="Burger">
+            <div id="lineUpper"></div>
+            <div id="lineMedium"></div>
+            <div id="lineLower"></div>
+          </div>
+          <div class="social">
+            <div class="phone">
+              <img class="phonelogo" src="img/phone-call 1.svg" alt="" />
+              <p class="phoneNumber">+38(096)0000000</p>
+            </div>
+
+            <div class="instagram">
+              <img class="instalogo" src="img/instagram 1.svg" alt="" />
+              <a
+                target="_blank"
+                href="https://www.instagram.com/explore/locations/276224192808760/ukraine/lviv-ukraine/"
+                >@restobartema</a
+              >
+            </div>
+            <div class="facebook">
+              <img class="facebooklogo" src="img/facebook 1.svg" alt="" />
+              <a target="_blank" href="https://www.facebook.com/restobar.tema/"
+                >@restobar.tema</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+    <div id="home" class="MainPage">
+      <div class="verticalHeader">
+        <div class="logoContainer">
+          <img src="img/logo copy.svg" alt="restobar Tema" class="logo" />
+        </div>
+        <div class="verticalMenu">
+          <p class="verticalSlogan">
+            Це витонченність, оригінальність та комфорт...
+          </p>
+          <a class="verticalOrder" href="">Забронювати столик</a>
+          <a class="verticalFeedback" onclick="toggleFeedback()"
+            >Залишити відгук</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="feedback" class="FeedBack">
+      <button onclick="toggleFeedback()">&#10006;</button>
+      <form action="">
+        <header><h1>feedback</h1></header>
+        <h2>Email</h2>
+        <input placeholder="Email..." type="emeil" />
+        <h2>Message</h2>
+        <textarea
+          placeholder="Message..."
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+    <div class="menuBackground">
+      <div  id="menuBG" class="verticalHeaderMenu">
+        <div class="verticalMenu">
+          <p class="DayMealText">Страва дня</p>
+          <div class="DayMeal">
+            <img src="./img/beff.png" alt="beff" />
+            <p class="DayMealName">Бефстроганов</p>
+            <p class="DayMealPrice">Ціна: 300 грн</p>
+          </div>
+        </div>
+      </div>
+      <div class="MealContainer">
+        <div class="ChooseMeal">
+          <img src="./img/snidanok.png" alt="beff" />
+          <p class="DayMealName">Сніданки</p>
+        </div>
+        <div class="ChooseMeal">
+          <img src="./img/holodni.png" alt="beff" />
+          <p class="DayMealName">Холодні закуски</p>
+        </div>
+        <div class="ChooseMeal">
+          <img src="./img/salad.png" alt="beff" />
+          <p class="DayMealName">Салати</p>
+        </div>
+        <div class="ChooseMeal">
+          <img src="./img/pershi.png" alt="beff" />
+          <p class="DayMealName">Перші страви</p>
+        </div>
+        <div class="ChooseMeal">
+          <img src="./img/osnovni.png" alt="beff" />
+          <p class="DayMealName">Основні страви</p>
+        </div>
+        <div class="ChooseMeal">
+          <img src="./img/dessert.png" alt="beff" />
+          <p class="DayMealName">Десерти</p>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="AboutUsBackground">
+      <div class="verticalHeaderAboutUs">
+        <div class="verticalMenu">
+          <p class="verticalSlogan">Бути в Темі - завжди гарна ідея!</p>
+          <a class="verticalOrder" href="">Забронювати столик</a>
+          <a class="verticalFeedback" href="">Залишити відгук</a>
+        </div>
+      </div>
+      <div class="AboutUs">
+        <p class="AboutUsHeader">Про нас:</p>
+        <p class="AboutUsText">
+          Рестобар Тема був заснований не так давно, всьоголиш 4 роки тому, у
+          Льові. Ми молодий заклад, готовий до експериментів та вдосконалень!
+          Якщо ви в пошуках нових вражень та приємної атмосфери - Вам до нас!
+        </p>
+        <p class="AboutUsFooter"> Ми відкриті : кожен день з 9:00 по 23:00</p>
+      </div>
+    </div>
+    <a href="#home" class="top">&#9757;</a>
+
+    <footer>
+      <h2>TOP GUESTS</h2>
+      <table class="styled-table" style="width:60%">
+        <tr>
+          <th>Full Name</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>Tony Hawk</td>
+          <td>22.06.2019</td>
+        </tr>
+        <tr>
+          <td>Rob Dyrdek</td>
+          <td>15.01.2012</td>
+        </tr>
+        <tr>
+          <td>Daewon Song</td>
+          <td>06.04.2009</td>
+        </tr>
+        <tr>
+          <td>Michael Jackson</td>
+          <td>28.05.2005</td>
+        </tr>
+        
+      </table>
+      <div class="video-background">
+        <div class="verticalHeaderAboutUs"></div>
+        <div class="video-foreground">
+          <div class="VideoBackground"></div>
+          <video controls autoplay loop muted>
+            <source src="./video/EPIC HANDHELD B ROLL - Cinematic Cooking Promo Video (Lumix G7 + 42.5mm 1.7 Lens).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script>
+      const toggle = () => {
+        document
+          .getElementById("lineUpper")
+          .classList.toggle("lineUpperToggled");
+        document
+          .getElementById("lineMedium")
+          .classList.toggle("lineMediumToggled");
+        document
+          .getElementById("lineLower")
+          .classList.toggle("lineLowerToggled");
+        document.getElementById("menu").classList.toggle("Toggled");
+      };
+      const toggleFeedback = () => {
+        document.getElementById("feedback").classList.toggle("FeedBackToggled");
+      };
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KMSWW4F"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

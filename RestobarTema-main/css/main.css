@@ -1,0 +1,877 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+}
+.MainPage {
+  width: 100%;
+  height: 100vh;
+position: relative;
+top: -149px;
+  background-image: url("../img/mainimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menuBackground {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+top: -149px;
+  background: linear-gradient(
+    269.43deg,
+    #fbfbfb -19.98%,
+    #a4a4a4 82.71%,
+    #111111 136.49%
+  );
+}
+.AboutUsBackground {
+  position: relative;
+top: -149px;
+  width: 100%;
+  height: 100vh;
+  /* min-width: 900px; */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #2c1b1b -1.69%, #7c3838 118.65%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.verticalHeader,
+.verticalHeaderMenu,
+.verticalHeaderAboutUs {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(39, 38, 38, 0.6);
+  width: 284px;
+  height: 100%;
+  margin-left: 10%;
+  z-index: 5;
+}
+.verticalHeaderMenu {
+  min-height: 900px;
+}
+.verticalHeaderAboutUs {
+  justify-content: center;
+}
+.verticalHeaderAboutUs > .verticalMenu {
+  margin: 0;
+}
+.verticalHeaderMenu > .verticalMenu {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
+.verticalMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100%;
+}
+.verticalSlogan {
+  color: white;
+  width: 240px;
+  font-size: 15px;
+  text-align: center;
+}
+.verticalOrder,
+.DayMealText {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(180, 131, 95, 1);
+  width: 235px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 32px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.DayMealText {
+  color: white;
+}
+.DayMeal {
+  width: 200px;
+  height: 300px;
+  border-radius: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(99, 99, 99, 1);
+  /* padding: 20px 0; */
+  margin-top: 10px;
+}
+.DayMealPrice {
+  margin: 0;
+  color: rgba(177, 177, 177, 1);
+}
+.DayMealName {
+  margin: 40px 0 10px 0;
+  color: rgb(235, 235, 235);
+}
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: calc(100% - (10% + 283px));
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+.AboutUs > p {
+  margin: 10px 50px;
+}
+.AboutUsText {
+  /* Рестобар Тема був заснований не так давно, всьоголиш 4 роки тому, у Львові. Ми молодий заклад, готовий до експериментів та вдосконалень! Якщо ви в пошуках нових вражень та приємної атмосфери - Вам до нас! */
+
+  width: 847px;
+  height: 246px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  color: #c7c8bb;
+}
+.AboutUsHeader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 82px;
+  color: #c7c8bb;
+  text-align: left;
+}
+.AboutUsFooter {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+  /* identical to box height */
+
+  color: #c7c8bb;
+  text-align: right;
+}
+.verticalFeedback {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(188, 163, 145, 1);
+  width: 235px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 32px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+.verticalOrder:hover,
+.verticalFeedback:hover {
+  color: white;
+}
+.verticalOrder:active,
+.verticalFeedback:active {
+  color: green;
+}
+.logoContainer {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  width: 200px;
+  position: relative;
+  animation: appear 0.3s forwards ease-in-out;
+}
+.container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hardcode {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 400vh;
+  width: 100%;
+  position: absolute;
+}
+.leftHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+  width: calc(10% + 284px);
+  height: 92px;
+  background-color: rgba(39, 38, 38, 0.95);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - (10% + 283px));
+  /* width: 100%; */
+  height: 92px;
+  background-color: rgba(39, 38, 38, 0.95);
+  position: sticky;
+  /* position: fixed; */
+  top: 0;
+  left: calc(10% + 283px);
+  right: 0;
+  margin-top: 57px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(180, 131, 95, 1);
+}
+header a {
+  color: #c7c8bb;
+}
+.headerText {
+  color: #c7c8bb;
+  margin-left: 5%;
+  display: none;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.menu li a {
+  text-decoration: none;
+  color: rgba(199, 200, 187, 1);
+  font-size: 18px;
+  font-style: normal;
+  font-size: 20px;
+  transition: border 0.5s ease-in-out;
+}
+.menu li a:hover {
+  border-bottom: 1px solid rgba(199, 200, 187, 1);
+}
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 10%;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.social p {
+  margin: 5px;
+  font-size: 13px;
+  color: rgba(199, 200, 187, 1);
+}
+.phone,
+.instagram,
+.facebook {
+  display: flex;
+  align-items: center;
+}
+.phone a,
+.instagram a,
+.facebook a {
+  text-decoration: none;
+}
+.phonelogo,
+.instalogo,
+.facebooklogo {
+  margin: 5px;
+  /* width: 13px; */
+  /* height: 13px; */
+}
+
+.MealContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - (10% + 283px));
+  min-height: 600px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+.ChooseMeal {
+  width: 200px;
+  height: 300px;
+  border-radius: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(99, 99, 99, 1);
+  margin: 20px 40px;
+  padding: 10px 20px 10px 10px;
+  text-align: center;
+}
+.ChooseMeal:hover,
+ChooseMeal:focus {
+  animation: rotate 1s forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ChooseMeal > p {
+  color: rgba(55, 55, 55, 1);
+  font-weight: bold;
+}
+
+.top {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  /* top: 5%; */
+  font-size: 50px;
+  text-decoration: none;
+  z-index: 100;
+}
+.Burger {
+  position: absolute;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  /* background-color: RED; */
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#lineUpper,
+#lineMedium,
+#lineLower {
+  width: 45px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(180, 131, 95, 1);
+  transition: all 650ms ease-in-out;
+}
+.lineUpperToggled {
+  transform: translateY(13px) rotate(-405deg);
+}
+.lineMediumToggled {
+  /* display: none; */
+  transform: rotate(45deg);
+
+  opacity: 0;
+}
+.lineLowerToggled {
+  transform: translateY(-15px) rotate(405deg);
+}
+@media screen and (max-width: 1024px) {
+  .Burger {
+    display: flex;
+  }
+  .menu,
+  .social {
+    display: none;
+    position: absolute;
+    top: 92px;
+    right: 0;
+    background-color: rgba(55, 54, 54, 1);
+    border-bottom-left-radius: 50px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.3s;
+  }
+  .Toggled {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 91px;
+    right: 0;
+    animation: appear 0.3s forwards ease-in-out;
+  }
+}
+.FeedBack {
+  display: none;
+  max-width: 500px;
+  width: 90%;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  background-color: rgb(31, 28, 28);
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#feedback > button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  outline: none;
+  z-index: 10;
+  border-radius: 25px;
+  background-color: rgba(180, 131, 95, 1);
+  transition: background 0.3s ease-in-out;
+  font-size: 20px;
+}
+#feedback > button:hover {
+  background-color: greenyellow;
+}
+form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  animation: appear 0.3s forwards ease-in-out;
+}
+form h1 {
+  color: rgba(180, 131, 95, 1);
+}
+form h2 {
+  color: white;
+  margin: 10px 0;
+}
+form > input {
+  width: 90%;
+  min-height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+form > textarea {
+  width: 90%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 18px;
+  resize: none;
+}
+form > button {
+  border: none;
+  outline: none;
+  width: 100px;
+  min-height: 50px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: rgba(180, 131, 95, 1);
+  transition: background 0.3s ease-in-out;
+  font-size: 20px;
+}
+form > button:hover {
+  background-color: greenyellow;
+}
+.FeedBackToggled {
+  display: flex;
+}
+footer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer h2 {
+  text-shadow: rgba(255, 204, 0, 0.582) 1px 0 10px;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-foreground video {
+  width: 100%;
+  height: 100%;
+}
+.VideoBackground {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(63, 63, 63, 0.6);
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+}
+.styled-table thead tr {
+  background-color: #980047;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  /* text-align: center; */
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f346;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #980047;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #980047;
+}
+.styled-table > tbody tr {
+  transition: background-color 0.3s ease-in-out;
+}
+.styled-table > tbody tr:hover {
+  background-color: rgba(152, 0, 71, 0.581);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 755px) and (max-width: 810px) {
+  .ChooseMeal {
+    width: 190px;
+    height: 220px;
+    margin: 20px 40px;
+  }
+}
+
+@media only screen and (min-width: 811px) and (max-width: 904px) {
+  .ChooseMeal {
+    width: 220px;
+    height: 300px;
+    margin: 20px 40px;
+  }
+}
+/* @media only screen and (min-width: 810px) {
+  .ChooseMeal {
+    width: 180px;
+    height: 240px;
+    margin: 20px 20px;
+  }
+} */
+
+@media only screen and (min-width: 1280px) {
+  .ChooseMeal {
+    width: 200px;
+    height: 300px;
+    margin: 20px 40px;
+  }
+}
+
+@media only screen and (max-height: 779px) {
+  .MainPage,
+  .menuBackground,
+  .AboutUsBackground,
+  .verticalHeader,
+  .verticalHeaderAboutUs,
+  .verticalHeaderMenu {
+    height: 780px;
+  }
+}
+@media only screen and (max-height: 686px) {
+  .MainPage,
+  .menuBackground,
+  .AboutUsBackground,
+  .verticalHeader,
+  .verticalHeaderAboutUs,
+  .verticalHeaderMenu {
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* .verticalHeader, */
+  .verticalHeaderAboutUs,
+  .verticalHeaderMenu {
+    /* height: 780px; */
+    /* display: none; */
+    left: -100%;
+  }
+  .AboutUs,
+  .MealContainer,
+  .header {
+    width: 100%;
+  }
+  .leftHeader {
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 755px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 80px;
+    margin: 20px 40px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ChooseMeal > img {
+    width: 60px;
+    height: 60px;
+  }
+  .ChooseMeal > p {
+    margin: 0 10px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1050px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 80px;
+    margin: 20px 40px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ChooseMeal > img {
+    width: 60px;
+    height: 60px;
+  }
+  .ChooseMeal > p {
+    margin: 0 10px;
+  }
+}
+/* header 50 */
+/* footer 28 */
+@media only screen and (max-width: 2000px) and (min-width: 1500) {
+  .AboutUsText {
+    width: 800px;
+    height: 300px;
+    font-size: 60px;
+  }
+  .AboutUsHeader {
+    font-size: 50px;
+  }
+  .AboutUsFooter {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .AboutUsText {
+    width: 600px;
+    height: 300px;
+  }
+  .AboutUsHeader {
+    font-size: 50px;
+  }
+  .AboutUsFooter {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .AboutUsText {
+    width: 400px;
+    height: 400px;
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .AboutUsText {
+    width: 700px;
+    height: 500px;
+    font-size: 35px;
+  }
+  .headerText h2 {
+    font-size: 10px;
+  }
+  .headerText {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .AboutUsText {
+    width: 400px;
+    height: 500px;
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .AboutUsText {
+    width: 300px;
+    height: 500px;
+    font-size: 26px;
+  }
+  .AboutUsHeader {
+    font-size: 42px;
+  }
+  .AboutUsFooter {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .AboutUsText {
+    width: 200px;
+    height: 500px;
+    font-size: 20px;
+  }
+  .AboutUsHeader {
+    font-size: 30px;
+  }
+  .AboutUsFooter {
+    font-size: 20px;
+  }
+  .verticalHeader {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1556px) {
+  .ChooseMeal {
+    width: 250px;
+    height: 370px;
+    margin: 20px 40px;
+  }
+}
+
+@media only screen and (min-width: 1760px) {
+  .ChooseMeal {
+    width: 270px;
+    height: 360px;
+    margin: 20px 40px;
+  }
+}
+@media only screen and (min-width: 1868px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 360px;
+    margin: 20px 40px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 360px;
+    margin: 60px 70px;
+  }
+}
+@media only screen and (min-width: 2270px) {
+  .ChooseMeal {
+    width: 350px;
+    height: 410px;
+    margin: 60px 70px;
+  }
+}
+@media only screen and (min-width: 2493px) {
+  .ChooseMeal {
+    width: 390px;
+    height: 420px;
+    margin: 60px 70px;
+  }
+}
+@media only screen and (min-width: 2670px) {
+  .ChooseMeal {
+    width: 480px;
+    height: 420px;
+    margin: 60px 70px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ChooseMeal {
+    width: 300px;
+    height: 80px;
+    /* margin: 20px 40px; */
+    padding: 0 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ChooseMeal > img {
+    width: 60px;
+    height: 60px;
+  }
+  .ChooseMeal > p {
+    margin: 0 10px;
+  }
+}
