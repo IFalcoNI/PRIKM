@@ -11,8 +11,8 @@ pipeline {
         stage('Image build') {
             steps {
                 sh "docker build -t prikm:latest ."
-                sh "docker tag prikm pryhodaandrii/prikm:latest"
-                sh "docker tag prikm pryhodaandrii/prikm:$BUILD_NUMBER"
+                sh "docker tag prikm makohon/prikm:latest"
+                sh "docker tag prikm makohon/prikm:$BUILD_NUMBER"
             }
             post{
                 failure {
@@ -28,8 +28,8 @@ pipeline {
             steps {
                 withDockerRegistry([ credentialsId: "dockerhub_token", url: "" ])
                 {
-                    sh "docker push pryhodaandrii/prikm:latest"
-                    sh "docker push pryhodaandrii/prikm:$BUILD_NUMBER"
+                    sh "docker push makohon/prikm:latest"
+                    sh "docker push makohon/prikm:$BUILD_NUMBER"
                 }
             }
             post{
@@ -48,7 +48,7 @@ pipeline {
                 sh "docker container prune --force"
                 sh "docker image prune --force"
                 //sh "docker rmi \$(docker images -q) || true"
-                sh "docker run -d -p 80:80 pryhodaandrii/prikm"
+                sh "docker run -d -p 80:80 makohon/prikm"
             }
             post{
                 failure {
